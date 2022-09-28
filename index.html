@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  #container{
+   height: 400px;
+   width: 300px;
+   margin:auto;
+   border: 1px red solid;
+   border-radius: 10px;
+   margin-top: 10px;
+ 
+  }
+  #box{
+    height: 300px;
+   width: 100%;
+  }
+  #himg{
+   height: 100%;
+   width: 100%;
+  }
+  h1{
+      color:red;
+      text-align: center;
+     
+   
+  }
+  input{
+      margin-top: 15px;
+      margin-left: 10%
+  }
+  label{
+    font-size:larger;
+  }
+  button{
+     height: 50px;
+     width: 150px;
+     color: aliceblue;
+     background-color: red;
+     border-radius: 10px;
+     margin-left: 25%;
+     font-size: large;
+      
+  }
+</style>
+
+<body>
+    <div id="box"><img id="himg" src="https://boyanov.com/wp-content/uploads/2007/04/McDonald-Iconic-Logo-3.jpg"></div>
+    <div id="container">
+        <h1>Order Now</h1>
+        <input type="checkbox" id="a"  value="Veg Maharaja Mac">
+        <label for="a"> Veg Maharaja Mac</label><br>
+        <input type="checkbox" id="b" value="Spicy Chicken Wrap">
+        <label for="b">Spicy Chicken Wrap</label><br>
+        <input type="checkbox" id="c"  value=" Spicy Paneer Wrap">
+        <label for="c"> Spicy Paneer Wrap</label><br>
+        <input type="checkbox" id="d" value="McAloo Tikki Burger">
+        <label for="d">McAloo Tikki Burger </label><br>
+        <input type="checkbox" id="e" value="Dosa Masala Burger">
+        <label for="e">Dosa Masala Burger </label><br>
+        <input type="checkbox" id="f"  value="Grilled Tikka Paneer Burger">
+        <label for="f"> Grilled Tikka Paneer Burger</label><br>
+        <input type="checkbox" id="g"  value="Grilled Butter Chicken Burger">
+        <label for="g"> Grilled Butter Chicken Burger</label><br>
+        <input type="checkbox" id="h"  value=" Chicken Maharaja Mac">
+        <label for="h"> Chicken Maharaja Mac</label><br>
+    <button>Order Food</button>
+   </div>
+</body>
+</html>
+<script>
+  let btn=document.querySelector("button");
+  btn.addEventListener("click",myfun)
+    let arr=[];
+    
+    function myfun(){
+      //   let data={
+      //      a:document.querySelector("#a").checked,
+      //      b:document.querySelector("#b").checked,
+      //      c:document.querySelector("#c").checked,
+      //      d:document.querySelector("#d").checked,
+      //      e:document.querySelector("#e").checked,
+      //      f:document.querySelector("#f").checked,
+      //      g:document.querySelector("#g").checked,
+      //      h:document.querySelector("#h").checked
+      //   }
+      // arr.push(data)
+      // console.log(arr)
+     window.location.href="order.html"
+    }
+</script>
